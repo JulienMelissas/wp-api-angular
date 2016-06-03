@@ -11,13 +11,13 @@
   <body>
     <h1>Posts:</h1>
     <div ng-app="getposts" id="posts">
-    <div ng-controller="PostsController">
-      <ul class="posts">
-        <li ng-repeat="post in posts" class="{{post.slug}}">
-          {{post.title.rendered}}
-        </li>
-      </ul>
+      <div ng-controller="PostsController">
+        <ul class="posts">
+          <li ng-repeat="post in posts" class="{{post.slug}}">
+            {{post.title.rendered}}
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
   </body>
 </html>
