@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WP-API Angular</title>
+
+    <!--  Include Angular -->
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <!--  Include JS-->
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Posts:</h1>
+    <div ng-app="getposts" id="posts">
+    <div ng-controller="PostsController">
+      <ul class="posts">
+        <li ng-repeat="post in posts" class="{{post.slug}}">
+          {{post.title.rendered}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  </body>
+</html>
